@@ -1,0 +1,288 @@
+/****主页内容container样式****/
+.container{
+	width:1072px;
+	height: 545px;
+	position: relative;
+	margin:20px auto 100px;
+}
+
+.container section{
+	position: absolute;
+}
+
+.container section span,
+.container section h3,
+.container section p{
+	font-size:1.7rem;
+	color:#fff;
+}
+
+.container section:nth-child(1),
+.container section:nth-child(2),
+.container section:nth-child(3),
+.container section:nth-child(4){
+	height: 330px;
+}
+
+.container section:nth-child(5),
+.container section:nth-child(6),
+.container section:nth-child(7){
+	height:190px;
+}
+
+.container section:nth-child(1) img,
+.container section:nth-child(2) img,
+.container section:nth-child(4) img{
+	top:90px;
+}
+
+.container section:nth-child(2) a,
+.container section:nth-child(4) a{
+	height:330px;
+}
+
+.container section:nth-child(3) .box a{
+	height:150px;
+}
+
+.container section:nth-child(5) a,
+.container section:nth-child(6) a,
+.container section:nth-child(7) a{
+	height:190px;
+}
+
+.container .box{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow:2px 2px 5px #444;
+	-moz-box-shadow:2px 2px 5px #444;
+	-o-box-shadow:2px 2px 5px #444;
+	box-shadow:2px 2px 5px #444;
+	-webkit-transition: box-shadow,.2s;
+	-moz-transition: box-shadow,.2s;
+	-o-transition: box-shadow,.2s;
+	transition: box-shadow,.2s;
+}
+
+.container .box:hover{
+	-webkit-box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+	-moz-box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+	-o-box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+	box-shadow: -2px -2px 5px #444,2px 2px 5px #444;
+}
+
+.container .box a{
+	display: inline-block;
+}
+
+.container section img{
+	width:70px;
+}
+
+  /**个人信息person-info样式**/
+  .person-info{
+  	width:300px;
+  	background: rgba(109,186,240,1);
+  	top:0;
+  	left:0;
+  }
+  .person-info div{
+  	width:180px;
+  	position: absolute;
+  	top:180px;
+  }
+  .person-info span{
+  	display: block;
+  	margin-bottom:5px;
+  }
+
+   /**座位预约seat-select样式**/
+   .seat-select{
+   	 width: 200px;
+   	 background: rgba(224,98,169,1);
+   	 top:0;
+   	 left:324px;
+   }
+   .seat-select span{
+   	position: absolute;
+   	top:180px;
+   }
+   .seat-select a{
+   	width:200px;
+   }
+
+   /**签到或取消预约seat-operate样式**/
+   .seat-operate{
+   	width:300px;
+   	top:0;
+   	left:548px;
+   }
+   .seat-operate .register{
+   	position: relative;
+   	background: rgba(144,168,228,1);
+   	height: 150px;
+   	margin-bottom: 30px;
+   }
+   .seat-operate .register a{
+   	width:300px;
+   }
+   .seat-operate .cancel-reserve{
+   	position: relative;
+   	background: rgba(242,187,133,1);
+   	height: 150px;
+   }
+   .seat-operate .cancel-reserve a{
+   	width:300px;
+   }
+   .seat-operate .register img,
+   .seat-operate .cancel-reserve img{
+   	left:40px;
+   }
+   .seat-operate .register span,
+   .seat-operate .cancel-reserve span{
+   	left:140px;
+   }
+ 
+   /**释放座位seat-release样式**/
+   .seat-release{
+   	width:200px;
+   	background: rgba(179,156,198,1);
+   	top:0;
+   	right:0;
+   }
+   .seat-release span{
+   	position: absolute;
+   	top:180px;
+   }
+   .seat-release a{
+   	width:200px;
+   }
+
+   /**预约记录reserve-record样式**/
+   .reserve-record{
+   	width:300px;
+   	background: rgba(240,148,231,1);
+   	bottom:0;
+   	left:0;
+   }
+   .reserve-record img{
+   	left:40px;
+   }
+   .reserve-record span{
+   	left:140px;
+   }
+   .reserve-record a{
+   	width:300px;
+   }
+
+   /**公告栏notice-board样式**/
+   .notice-board{
+   	width:524px;
+   	background: rgba(172,208,102,1);
+   	bottom:0;
+   	left:324px;
+   }
+   .notice-board img{
+   	left:40px;
+   }
+   .notice-board .notice-info{
+   	left:140px;
+   }
+   .notice-board a{
+   	width:524px;
+   }
+
+   /**违约记录default-record样式**/
+   .default-record{
+   	width:200px;
+   	background: rgba(137,218,185,1);
+   	bottom:0;
+   	right:0;
+   }
+   .default-record img{
+   	left:20px;
+   }
+   .default-record span{
+   	left:100px;
+   }
+   .default-record a{
+   	width:200px;
+   }
+
+/*==================
+  *  登录页面样式
+ ===================*/
+ .login-container{
+ 	width:800px;
+ 	height:500px;
+ 	margin:0 auto;
+ 	position:relative;
+ }
+ .login-container .img-display{
+ 	width:340px;
+ 	font-size: 0;
+ 	position: absolute;
+ 	left:40px;
+ }
+ .login-container .img-display img{
+ 	width:120px;
+ 	margin-right:50px;
+ 	margin-bottom:20px;
+ }
+ .login-container .login {
+ 	right:40px;
+ 	font-size:2rem;
+ 	color:#fff;
+ }
+ .login-container .login div{
+ 	line-height: 50px;
+ 	height:50px;
+ 	margin-bottom: 20px;
+ 	background: #aaa;
+ 	padding-left:10px;
+ 	padding-right:10px;
+ 	-webkit-border-radius:5px;
+ 	-moz-border-radius:5px;
+ 	-o-border-radius:5px;
+ 	border-radius:5px;
+ }
+ .login-container .login input{
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-o-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	width:240px;
+ 	height:50px;
+ 	padding-left:10px;
+ 	color:#fff;
+ 	border:none;
+ 	background: #aaa;
+ 	vertical-align: top;
+ }
+ .login-container .login button{
+ 	width:150px;
+ 	height:50px;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	letter-spacing: .3rem;
+ 	font-size: 2.5rem;
+ 	display: block;
+ 	margin:20px auto;
+ 	border:none;
+ 	color:#fff;
+ 	background:rgba(114,198,130,1);
+ 	-webkit-border-radius: 20px;
+ 	-moz-border-radius: 20px;
+ 	-o-border-radius: 20px;
+ 	border-radius: 20px;
+ 	-webkit-transition:background .8s;
+ 	-moz-transition:background .8s;
+ 	-o-transition:background .8s;
+ 	transition:background .8s;
+ }
+ .login-container .login button:hover{
+ 	background: rgba(84,178,110,1);
+ 	cursor:pointer;
+ }

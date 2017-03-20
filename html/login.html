@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- 以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。 -->  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登录</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="../images/logo1.jpg" alt="广东外语外贸大学logo" class="logo-img vertical-center">
+			<h1 class="vertical-center">图书馆座位管理系统</h1>
+		</div>
+	</header><!-- header结束 -->
+	<div class="login-container">
+		<section class="img-display vertical-center">
+			<img src="../images/library.png" alt="">
+			<img src="../images/books1.png" alt="">
+			<img src="../images/seat.png" alt="">
+			<img src="../images/computer.png" alt="">
+		</section>
+		<section class="login vertical-center">
+			<form action="" name="mylogin" method="post" id="mylogin">
+				<div><span>学号：</span><input type="text" id="login_num" maxlength="11"></div>
+				<div><span>密码：</span><input type="password" id="login_pwd"></div>
+				<button class="login-btn">Login</button>
+			</form>
+		</section>
+	</div>
+	<script type="text/javascript" src="../script/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../script/login.js"></script>
+</body>
+</html>

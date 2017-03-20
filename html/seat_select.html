@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- 以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。 -->  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>广外图书馆座位管理系统——座位预约</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/seat-select.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+</head>
+<body>
+	<!--[if lte IE8]>
+	<p class="browserupdate">您的浏览器版本太老，请到<a href="http://browsehappy.com">这里</a>更新，以获取最佳的浏览体验。</p>
+	<![endif]-->
+	<header>
+		<div class="logo">
+			<img src="../images/logo1.jpg" alt="广东外语外贸大学logo" class="logo-img vertical-center">
+			<h1 class="vertical-center">图书馆座位管理系统</h1>
+		</div>
+		<div class="logoff">
+			<a href="#"><span><em class="username">明慧</em>（<em class="usernum">20131003605</em>）</span></a>
+			<a href="login.html" id="logout"><img src="../images/out.png" alt="注销登录"></a>
+		</div>
+	</header><!-- header结束 -->
+	<div class="container">
+		<nav class="nav-list">
+			<a href="index.html" class="nav-item" id="nav-item1">
+				<span class="iconfont">&#xe63e;</span>
+				<span class="item-info">主页</span>
+			</a>
+			<a href="seat_select.html" class="nav-item" id="nav-item2">
+				<span class="iconfont">&#xe604;</span>
+				<span class="item-info">预约座位</span>
+			</a>
+			<a href="seat_register.html" class="nav-item" id="nav-item3">
+				<span class="iconfont">&#xe601;</span>
+				<span class="item-info">签到</span>
+			</a>
+			<a href="cancel_reserve.html" class="nav-item" id="nav-item4">
+				<span class="iconfont">&#xe64a;</span>
+				<span class="item-info">取消预约</span>
+			</a>
+			<a href="seat_release.html" class="nav-item" id="nav-item5">
+				<span class="iconfont">&#xe751;</span>
+				<span class="item-info">释放座位</span>
+			</a>
+			<a href="reserve_record.html" class="nav-item" id="nav-item6">
+				<span class="iconfont">&#xe610;</span>
+				<span class="item-info">预约记录</span>
+			</a>
+			<a href="default_record.html" class="nav-item" id="nav-item7">
+				<span class="iconfont">&#xe65f;</span>
+				<span class="item-info">违纪记录</span>
+			</a>
+			<a href="notice.html" class="nav-item" id="nav-item8">
+				<span class="iconfont">&#xe600;</span>
+				<span class="item-info">公告栏</span>
+			</a>
+			<span class="triangle"></span>
+		</nav>
+		<div class="seat-content">
+			<form class="seat-info" action="" method="post" id="seat-info">
+				<div id="info1">
+					<em>座位：</em><em id="seat_position">1F-125B</em>
+				</div>
+				<div id="info2">
+					<em>预约天数：</em>
+					<span class="input">
+						<input type="text" id="use_day">
+						<span class="triangle vertical-center"></span>
+					</span>
+					<table class="use-day-select">
+						<tr>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+						</tr>
+					</table>
+				</div>
+				<div id="info3">
+					<em>起始日期：</em><span class="input"><input type="text" name="start_date" id="start_date"><span class="iconfont vertical-center">&#xe60a;</span></span>
+					<table class="start-date-select">
+						<tr>
+							<th class="date-left"><span></span></th>
+							<th class="date-month" colspan="3">March</th>
+							<th class="date-right"><span></span></th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+						</tr>
+					</table>
+				</div>
+				<button id="seat_sure" class="seat-sure">确定</button>
+			</form><!--  form seat-info结束 -->
+			<div class="seat-map" id="seat-map"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../script/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../script/common.js"></script>
+	<script type="text/javascript" src="../script/seat-select.js"></script>
+</body>
+</html>

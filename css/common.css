@@ -1,0 +1,216 @@
+/****************
+  *  页面样式
+ ****************/
+
+/*===============
+  *  基本默认值
+ ==============*/
+ html{
+	font-size:63.5%;
+	color:#222;
+}
+
+::-moz-selection{
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+::selection{
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+li{
+	list-style:none;
+}
+
+em{
+	font-style:normal;
+}
+
+a{
+	text-decoration: none;
+}
+/*===============
+  *  工具样式
+ ==============*/
+ .horizontal-center{
+ 	position:absolute;
+ 	left:50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+ }
+ .vertical-center{
+ 	position:absolute;
+ 	top:50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+ }
+ .pull-right{
+ 	float:right !important;
+ }
+
+ .pull-left{
+ 	float:left !important;
+ }
+
+ .text-right{
+ 	text-align:right !important;
+ }
+
+ .text-left{
+ 	text-align:left !important;
+ }
+
+ .text-center{
+ 	text-align:center !important;
+ }
+
+ .hide{
+ 	display:none !important;
+ }
+
+ .show{
+ 	display:block !important;
+ }
+
+ .invisible{
+ 	visibility:hidden;
+ }
+
+ .clearfix:before,.clearfix:after{
+ 	content:" ";
+ 	display: table;
+ }
+
+ .clearfix.after{
+ 	clear:both;
+ }
+
+ /*==================
+  *  浏览器更新提示
+ ===================*/
+.browserupdate{
+ 	margin:0;
+ 	padding: 1rem;
+ 	background: #ccc;
+ }
+
+ /*==================
+  *  自定义页面样式
+ ===================*/
+body{
+	font-size:1.2rem;
+	line-height: 1.5rem;
+	background-color: #ededef;
+	color:#222;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+
+/*===================
+ *  头部header样式
+ ===================*/
+header{
+	width:100%;
+	height:100px;
+	position: relative;
+}
+header .logo{
+	height:100px;
+	position:relative;
+}
+header .logo img{
+	width:300px;
+	left:50px;
+}
+header .logo h1{
+	font-size:2.3rem;
+	color:#555;
+	left:370px;
+}
+header .logoff{
+	position: absolute;
+	right:15px;
+	top:15px;
+	vertical-align: middle;
+}
+header .logoff a:first-child{
+	color:#222;
+}
+header .logoff a:first-child:hover{
+	color:#1dbaf0;
+}
+header .logoff span{
+	vertical-align: middle;
+	font-size:1.4rem;
+	margin-right:10px;
+}
+
+header .logoff img{
+	vertical-align: middle;
+	width:30px;
+	height:30px;
+}
+
+/*===================
+ *  导航栏样式
+ ===================*/
+@font-face {
+  font-family: 'iconfont';  /* project id 256662 */
+  src: url('http://at.alicdn.com/t/font_vurgx20ulabdquxr.eot');
+  src: url('http://at.alicdn.com/t/font_vurgx20ulabdquxr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_vurgx20ulabdquxr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_vurgx20ulabdquxr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_vurgx20ulabdquxr.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:1.6rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.container{
+	width:1072px;
+}
+.container .nav-list{
+	position: relative;
+	width:100%;
+	height:36px;
+	background:rgba(109,186,240,1);
+	font-size: 0;
+}
+.container .nav-list .nav-item{
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	height:36px;
+	line-height: 36px;
+	width:134px;
+	border-right:2px solid #fff;
+	text-align: center;
+	color:#fff;
+	font-size:1.6rem;
+}
+.container .nav-list .nav-item:nth-child(8){
+	border:none;
+}
+.container .nav-list .triangle{
+	width:0;
+	height:0;
+	border-width:10px 10px 0;
+	border-style: solid;
+	border-color:#6dbaf0 transparent transparent transparent;
+    position: absolute;
+    top:36px;
+}

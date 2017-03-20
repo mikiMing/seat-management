@@ -1,0 +1,157 @@
+.container{
+	margin:20px auto;
+}
+.container .nav-list .triangle{
+	left: 191px;
+}
+.container .nav-list #nav-item2 .item-info{
+	display: none !important;
+}
+.container .seat-content{
+	width:100%;
+	height:500px;
+	background: #fff;
+	font-size:1.6rem;
+}
+.seat-content .seat-info{
+	width:280px;
+	height:100%;
+	padding:150px 10px;
+}
+.seat-info div{
+	margin-bottom: 20px;
+	position: relative;
+	font-size:0;
+}
+.seat-info em,.seat-info span,.seat-info input,.seat-info table{
+	font-size: 1.6rem;
+}
+.seat-info em{
+	display: inline-block;
+	width:100px;
+	text-align: right;
+}
+.seat-info #seat_position{
+	text-align: left;
+}
+.seat-content .seat-info,
+.seat-info .input,
+.seat-info input,
+.seat-info .use-day-select{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.seat-info .input{
+	position: relative;
+	display: inline-block;
+	height:25px;
+	width:160px;
+	background:rgb(210,210,210);
+	padding-left:10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.seat-info .input:hover,
+.seat-info .input input:hover,
+.seat-info .input span:hover{
+	cursor:pointer;
+}
+.seat-info input{
+	border-width:0 2px 0 0;
+	border-style: solid;
+	botder-color:#fff;
+	outline: none;
+	background: rgb(210,210,210);
+	width:120px;
+	height:25px;
+	color: #fff;
+}
+.seat-info .triangle{
+	position:absolute;
+	right:10px;
+	border-width:6px;
+	border-style:solid;
+	border-color: #777 transparent transparent transparent;
+}
+.seat-info .use-day-select,
+.seat-info .start-date-select{
+	display: none;
+}
+.seat-info .use-day-select,
+.seat-info .start-date-select{
+	width:160px;
+	padding:5px;
+	background:rgb(240,240,240);
+	position: absolute;
+	top:25px;
+	right:0;
+	z-index: 10;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.seat-info .use-day-select td,
+.seat-info .start-date-select td{
+	wdith:30px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color:#5d9ad0;
+	cursor:pointer;
+}
+.seat-info .use-day-select td:hover,
+.seat-info .start-date-select td:hover{
+	background: #fff;
+}
+.seat-info .start-date-select th{
+	color:#6d8aa0;
+	height:30px;
+	line-height: 30px;
+}
+.start-date-select th span{
+	display: inline-block;
+	border-width: 7px;
+	border-style: solid;
+}
+.start-date-select .date-left span{
+	border-color:transparent #6d8aa0 transparent transparent;
+}
+.start-date-select .date-right span{
+	border-color:transparent transparent transparent #6d8aa0;
+}
+.start-date-select .date-left span:hover,
+.start-date-select .date-right span:hover{
+	cursor:pointer;
+}
+.seat-info .iconfont{
+	position: absolute;
+	right: 5px;
+	color:#777;
+}
+.seat-info .seat-sure{
+	display: block;
+	width:130px;
+	height:40px;
+	color:#fff;
+	font-size:2rem;
+	background:#73c682;
+	border:none;
+	margin:30px auto;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	-o-transition: background .5s;
+	transition: background .5s;
+}
+.seat-info .seat-sure:hover{
+	background:#86daa0;
+	cursor:pointer;
+}
