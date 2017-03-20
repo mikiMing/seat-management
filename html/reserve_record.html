@@ -7,6 +7,7 @@
 	<title>广外图书馆座位管理系统——预约记录查询</title>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/seat_operate.css">
 </head>
 <body>
 	<header>
@@ -55,6 +56,104 @@
 			</a>
 			<span class="triangle" style="left:727px;"></span>
 		</nav>
+		<div class="reserve-content">
+			<table id="reserve_record">
+				<tbody>
+					<tr>
+						<th>序号</th>
+						<th>预约日期</th>
+						<th>起始日期</th>
+						<th>预约天数</th>
+						<th>使用状态</th>
+						<th>违约情况</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2016.2.16</td>
+						<td>2016.3.17</td>
+						<td>7天</td>
+						<td>已结束</td>
+						<td>1次</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>2016.2.27</td>
+						<td>2016.2.29</td>
+						<td>20天</td>
+						<td>已结束</td>
+						<td>1次</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>2016.4.27</td>
+						<td>2016.4.28</td>
+						<td>10天</td>
+						<td>已结束</td>
+						<td>无</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>2016.5.18</td>
+						<td>2016.5.20</td>
+						<td>7天</td>
+						<td>已结束</td>
+						<td>无</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>2016.5.31</td>
+						<td>2016.6.1</td>
+						<td>30天</td>
+						<td>已结束</td>
+						<td>2次</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>2016.2.16</td>
+						<td>2016.3.17</td>
+						<td>7天</td>
+						<td>已结束</td>
+						<td>1次</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>2016.2.27</td>
+						<td>2016.2.29</td>
+						<td>20天</td>
+						<td>已结束</td>
+						<td>1次</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>2016.4.27</td>
+						<td>2016.4.28</td>
+						<td>10天</td>
+						<td>已结束</td>
+						<td>无</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>2016.5.18</td>
+						<td>2016.5.20</td>
+						<td>7天</td>
+						<td>已结束</td>
+						<td>无</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>2016.5.31</td>
+						<td>2016.6.1</td>
+						<td>30天</td>
+						<td>已结束</td>
+						<td>2次</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="page-select">
+				<div class="page selected" id="page1">1</div>
+				<div class="page" id="page2">2</div>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript" src="../script/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../script/common.js"></script>

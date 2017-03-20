@@ -35,6 +35,9 @@ em{
 a{
 	text-decoration: none;
 }
+body{
+	min-width:1200px;
+}
 /*===============
   *  工具样式
  ==============*/
